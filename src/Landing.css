@@ -47,6 +47,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 2;
 }
 
 .bottom_rect{
@@ -83,4 +84,27 @@
     position: absolute;
     bottom: 0;
     padding-right: 40%;
+}
+.social{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1024px)   {
+    .top_half{
+        padding-left: 150px;
+    }
+}
+@media only screen and (max-width: 768px)   {
+    .acm{
+        font-size: 30px;
+    }
+    .bottom_half{}
+    .top_half{}
 }
