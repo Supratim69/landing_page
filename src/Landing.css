@@ -1,0 +1,86 @@
+*{
+    background-color: #000000;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acm{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.faq{
+    background-color: #000000;
+    text-decoration: #ffffff;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size:  28px;
+}
+
+.register-button{
+    background-color: #000000;
+    text-decoration: #ffffff;
+    border: #007ACC 1px solid;
+    border-radius: 0%;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    transition: background-color 0.5s ease;
+}
+.register-button:hover {
+    background-color: #007ACC;
+}
+.H2{
+    padding-left: 2.5%;
+    padding-top: 1.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.H2_rev{
+    padding-right: 2.5%;
+    padding-bottom: 1.5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom_rect{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2%;
+    padding-left: 3%;
+}
+.top_rect{
+    padding-top: 2%;
+    padding-right: 3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottom_dots{
+    position: absolute;
+    left: 0;
+    padding-left: 0.25%;
+}
+
+.top_dots{
+    position: absolute;
+    right: 0;
+}
+
+.top_half{
+    position: absolute;
+    top: 0;
+    padding-left: 40%;
+}
+.bottom_half{
+    position: absolute;
+    bottom: 0;
+    padding-right: 40%;
+}
