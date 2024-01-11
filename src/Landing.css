@@ -6,30 +6,50 @@
     justify-content: center;
     align-items: center;
 }
+.main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.side_half2{
+    display: none;
+}
+.logo{
+    width:auto;
+    height: auto;
+    /* margin-bottom: 35%; */
+}
 .acm{
     font-family: sans-serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
+    
 }
 .faq{
     background-color: #000000;
     text-decoration: #ffffff;
     font-family: sans-serif;
     font-weight: 500;
-    font-size:  28px;
+    font-size:  32px;
 }
 
 .register-button{
+    /* margin-top: 15%; */
     background-color: #000000;
     text-decoration: #ffffff;
     border: #007ACC 1px solid;
     border-radius: 0%;
+    width: 100%;
+    /* height: 25%; */
     font-family: sans-serif;
     font-weight: 500;
-    font-size: xx-large;
     transition: background-color 0.5s ease;
+    font-size: 30px;
+    margin-bottom: 75%;  
 }
 .register-button:hover {
     background-color: #007ACC;
@@ -68,17 +88,19 @@
     position: absolute;
     left: 0;
     padding-left: 0.25%;
+    margin-top: 17%;
 }
 
 .top_dots{
     position: absolute;
     right: 0;
+    margin-bottom: 20%;
 }
 
 .top_half{
     position: absolute;
     top: 0;
-    padding-left: 40%;
+    margin-left: 40%;
 }
 .bottom_half{
     position: absolute;
@@ -91,20 +113,89 @@
     right: 0;
     padding-right: 5%;
     padding-bottom: 5%;
-
 }
-
+.side_half{
+    position: absolute;
+    top: 0;
+    padding-left: 0%;
+    display: none;
+}
 
 /* media queries */
 @media only screen and (max-width: 1024px)   {
     .top_half{
         padding-left: 150px;
     }
+    .register-button{
+        margin-bottom: 50%;
+    }
+    
+    .bottom_half{
+        display: none;
+    }
+    .top_half{
+        display: none;
+    }
+    .side_half{
+        display: initial;
+        left: 0;
+        margin-top: 12%;
+    }
 }
 @media only screen and (max-width: 768px)   {
+    
+    
     .acm{
         font-size: 30px;
     }
-    .bottom_half{}
-    .top_half{}
+    .H2,.H2_rev{
+        width: 50%;
+    }
+    .bottom_dots{
+        padding-left: 1%;
+
+    }
+    
+}
+@media only screen and (max-width:430px){
+    .logo{
+        width: 60%;
+    }
+    .acm{
+        font-size: 20px;
+        margin-bottom: 7%;
+    }
+    .H2{
+        width: 75%;
+    }
+    .H2_rev{
+        width: 70%;
+        display: none;
+    }
+    .top_dots{
+        margin-bottom: 30%;
+        width: 10%;
+    }
+    .bottom_dots{
+        margin-top: 60%;
+        width: 10%;
+    }
+    .bottom_rect{
+        width: 20%;
+    }
+    .top_rect{
+        width: 20%;
+        margin-top: 3%;
+    }
+    .register-button{
+        height: auto;
+        width: 100%;
+        font-size: 20px;
+    }
+    .faq{
+        font-size: 25px;
+    
+    }
+    
+    
 }

@@ -1,6 +1,6 @@
 import "./Landing.css";
 
-const svg = `<svg width="173" height="222" viewBox="0 0 173 222" fill="none" xmlns="http://www.w3.org/2000/svg">
+const svg = `<svg width="160" height="222" viewBox="0 0 173 222" fill="none" xmlns="http://www.w3.org/2000/svg">
 <a xlink:href="https://github.com/ACM-VIT" target="_blank">
 <path d="M123.019 0C118.028 0.000206959 113.2 1.7763 109.398 5.01049C105.597 8.24467 103.071 12.7259 102.271 17.6523C101.472 22.5788 102.452 27.629 105.035 31.8992C107.618 36.1695 111.637 39.3813 116.371 40.9598C117.422 41.1437 117.817 40.5132 117.817 39.9614C117.817 39.4622 117.79 37.807 117.79 36.0467C112.509 37.0188 111.143 34.7594 110.723 33.5771C110.256 32.4272 109.517 31.4082 108.568 30.6082C107.833 30.2141 106.782 29.242 108.542 29.2157C109.214 29.2887 109.859 29.5226 110.421 29.8976C110.984 30.2726 111.448 30.7777 111.774 31.3701C112.061 31.8865 112.448 32.3411 112.911 32.7079C113.375 33.0747 113.906 33.3464 114.475 33.5075C115.043 33.6686 115.638 33.7158 116.225 33.6466C116.812 33.5774 117.38 33.393 117.895 33.1041C117.986 32.0356 118.462 31.0365 119.235 30.293C114.559 29.7675 109.672 27.9546 109.672 19.9151C109.642 17.8262 110.413 15.8051 111.826 14.2664C111.184 12.4508 111.259 10.4584 112.036 8.69646C112.036 8.69646 113.797 8.14471 117.816 10.8509C121.256 9.90497 124.886 9.90497 128.326 10.8509C132.345 8.11846 134.106 8.69646 134.106 8.69646C134.883 10.4584 134.959 12.4508 134.316 14.2664C135.733 15.8024 136.505 17.8253 136.47 19.9151C136.47 27.9809 131.557 29.7675 126.881 30.293C127.382 30.8014 127.769 31.4118 128.013 32.0827C128.258 32.7536 128.356 33.4694 128.299 34.1814C128.299 36.9926 128.273 39.2521 128.273 39.9615C128.273 40.5132 128.667 41.17 129.718 40.9598C134.445 39.3685 138.452 36.1492 141.024 31.8767C143.596 27.6043 144.566 22.5567 143.761 17.635C142.956 12.7133 140.429 8.23793 136.629 5.00768C132.829 1.77743 128.006 0.00259559 123.019 0Z" fill="white"/>
 </a>
@@ -32,17 +32,31 @@ function Landing() {
   return (
     <div className="container">
       <img src="assets/H2.png" alt="" className="H2" />
+      <img src="assets/Rectangle 26.png" alt="" className="side_half" />
       <img src="assets/Dots.png" alt="" className="top_dots" />
       <img src="assets/rect.png" alt="" className="top_rect" />
       <img src="assets/Rectangle 25.png" alt="" className="top_half" />
-      <div>
-        <img src="assets/ACM Logo.png" alt="ACM Logo" className="logo" />
-        <div className="acm">ACM Organizing Committee Selections</div>
-        <button className="register-button">REGISTER NOW</button>
-        <button className="faq">FAQs</button>
+
+      <div className="main">
+        <div>
+          <a href="https://acmvit.in/" target="_blank">
+            <img src="assets/ACM Logo.png" alt="ACM Logo" className="logo" />
+          </a>
+        </div>
+        <div>
+          <div className="acm">ACM Organizing Committee Selections</div>
+        </div>
+        <div>
+          <button className="register-button">REGISTER NOW</button>
+        </div>
+        <div>
+          <button className="faq">FAQs</button>
+        </div>
       </div>
+
       <img src="assets/rect.png" alt="" className="bottom_rect" />
       <img src="assets/Dots.png" alt="" className="bottom_dots" />
+      <img src="assets/Rectangle 27.png" alt="" className="side_half2" />
       <img src="assets/Rectangle 24.png" alt="" className="bottom_half" />
       <img src="assets/H2 rev.png" alt="" className="H2_rev" />
       <div className="social" dangerouslySetInnerHTML={{ __html: svg }}></div>
